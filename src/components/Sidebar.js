@@ -3,8 +3,8 @@ import "./Sidebar.css";
 import User from "../containers/User";
 const _ = require("lodash");
 const Sidebar= ({contacts})=>{
-   console.log('Inside sidebar');
-   console.log(contacts);
+   //console.log('Inside sidebar');
+   //console.log(contacts);
     return <aside className="Sidebar">
 
       {contacts.map(contact => <User user={contact} key={contact.user_id} />)}

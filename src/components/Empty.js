@@ -2,9 +2,9 @@ import React from "react";
 import "./Empty.css";
 const Empty = ({ user }) => {
  const { name, profile_pic, status } = user;
- console.log('Name and satus are ');
- console.log('name',name);
- console.log('status',status);
+// console.log('Name and satus are ');
+ //console.log('name',name);
+ //console.log('status',status);
  const first_name = name.split(" ")[0];
  return (
      <div className="Empty">

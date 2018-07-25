@@ -8,7 +8,7 @@ const _ = require("lodash");
 const App=()=>{
     const {contacts,activeUserId,user}=store.getState();
     //console.log('contacts inside App.js is ',contacts);
-    console.log(_.values(contacts));
+    //console.log(_.values(contacts));
   return(
      <div className="App">
      <Sidebar  contacts={_.values(contacts)}/>
