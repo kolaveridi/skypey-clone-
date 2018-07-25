@@ -18,7 +18,6 @@ const User = ({ user }) => {
       <p className="User__details-status">{val.status}</p>
       </div>
   );
-
 });
 
  return (

@@ -6,13 +6,13 @@ import store from "../store";
 import Main from '../components/Main.js';
 const _ = require("lodash");
 const App=()=>{
-    const {contacts}=store.getState();
+    const {contacts,activeUserId,user}=store.getState();
     //console.log('contacts inside App.js is ',contacts);
     console.log(_.values(contacts));
   return(
      <div className="App">
      <Sidebar  contacts={_.values(contacts)}/>
-     <Main />
+     <Main user={user} activeUserId={activeUserId} />
      </div>
 
 
